@@ -37,6 +37,8 @@ text-align:center;
 .logo{
 max-width:220px;
 margin-bottom:30px;
+border-radius:20px;
+box-shadow:0 4px 20px rgba(0,0,0,.25);
 }
 
 .hero-title{
@@ -115,8 +117,17 @@ padding:18px 35px;
 border-radius:12px;
 text-decoration:none;
 font-weight:700;
-display:inline-block;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
 margin-top:20px;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 18px rgba(0,0,0,.15);
 }
 
 footer{
@@ -126,11 +137,39 @@ text-align:center;
 padding:30px;
 }
 
+.top-nav{
+position:absolute;
+top:25px;
+right:40px;
+z-index:1000;
+}
+
+.login-btn{
+background:white;
+color:#001f3f;
+padding:12px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.login-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+  
 </style>
 
 </head>
 
 <body>
+
+<nav class="top-nav">
+    <a href="https://app.geopi.app.br" target="_blank" class="login-btn">
+        Acessar Plataforma
+    </a>
+</nav>
 
 <header>
 
@@ -163,6 +202,17 @@ target="_blank">
 Solicitar Demonstração
 </a>
 
+<br><br>
+
+<a
+class="login-btn"
+href="https://app.geopi.app.br"
+target="_blank">
+
+Acessar Plataforma
+
+</a>
+  
 </header>
 
 <section class="section">
@@ -214,13 +264,13 @@ Caso Real
 <div class="card">
 
 <p>
-O GEOPI já foi utilizado em processo envolvendo discussão de insalubridade em ambiente hospitalar.
+Caso real de discussão de insalubridade em ambiente hospitalar com utilização de evidências operacionais produzidas pelo GEOPI para suporte técnico à defesa.
 </p>
 
 <br>
 
 <p>
-As evidências produzidas pela plataforma contribuíram para a análise técnica do caso.
+A plataforma consolidou informações de exposição ocupacional, normas aplicáveis e dados operacionais para apoiar a análise pericial do caso.
 </p>
 
 </div>
@@ -264,7 +314,18 @@ class="whatsapp"
 href="https://wa.me/5511999081978"
 target="_blank">
 
-Falar com Henrique
+<svg xmlns="http://www.w3.org/2000/svg"
+width="22"
+height="22"
+fill="currentColor"
+viewBox="0 0 16 16"
+style="margin-right:10px;">
+
+<path d="M13.601 2.326A7.854 7.854 0 0 0 8.02 0C3.636 0 .07 3.565.07 7.95c0 1.4.366 2.766 1.062 3.972L0 16l4.205-1.102a7.924 7.924 0 0 0 3.815.974h.003c4.383 0 7.95-3.565 7.95-7.95a7.89 7.89 0 0 0-2.372-5.596z"/>
+
+</svg>
+
+Contato WhatsApp
 
 </a>
 
